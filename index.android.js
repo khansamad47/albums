@@ -2,11 +2,12 @@
 
 // Import external modules
 import React from 'react'
-import { Text, AppRegistry } from 'react-native'
+import { View, Text, AppRegistry } from 'react-native'
 
 // Import local stuff
 // * Need relative path and no .js is required
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 // Create App Component
 // This is the ROOT component
@@ -20,7 +21,12 @@ const App = () => {
     //);
 
     // Note that custom components are also invoked by JSX
-    return (<Header/>);
+    return (
+        <View>
+            <Header headerText={'Albums'} />
+            <AlbumList />
+        </View>
+    );
 };
 
 // Render to Device

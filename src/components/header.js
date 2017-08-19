@@ -18,11 +18,11 @@ import {Text, View} from 'react-native';
 // * Position child on the screen using flexbox
 // * Flexbox is css based position technology
 // * It is used to position elements in a container 
-const Header = () => {
+const Header = (props) => {
     const { textStyle, viewStyle } = styles;
     return (
         <View style={viewStyle}>
-            <Text style={textStyle}>Albums</Text>
+            <Text style={textStyle}>{ props.headerText }</Text>
         </View>
     );
 };
