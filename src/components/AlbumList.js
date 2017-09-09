@@ -1,6 +1,6 @@
 // We dont want to get rid of React
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 // Functional Component
@@ -27,9 +27,9 @@ class AlbumList extends Component {
     render() {
         console.log(this.state);
         return (
-            <View>
+            <ScrollView>
                 {this.renderAlbums()}
-            </View>
+            </ScrollView>
         );
     }
 
